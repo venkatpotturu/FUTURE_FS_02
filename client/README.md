@@ -53,8 +53,6 @@ FUTURE_FS_02
 ├── client/ # React Admin Dashboard
 ├── server/ # Node.js Backend
 └── README.md
-
-
 ---
 
 ## 🔑 Key Functionalities
@@ -158,4 +156,3 @@ Through this project, I learned:
 
 ---
 
-## 📂 Project Structure
