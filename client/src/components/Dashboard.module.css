@@ -1,0 +1,231 @@
+/* Dashboard.module.css */
+
+.dashboardContainer {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  color: #333;
+}
+
+.dashboardContainer h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.messageSuccess {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+}
+
+.messageError {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}
+
+.analyticsContainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.analyticsCard {
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 150px;
+}
+
+.analyticsCard p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.analyticsCard span {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.3em;
+}
+
+.leadsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures border-radius applies to children */
+}
+
+.leadsTable th,
+.leadsTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.leadsTable th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.leadsTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leadsTable tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.actionButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+  margin-right: 5px;
+}
+
+.actionButton:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.actionButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.actionButtonContacted {
+  background-color: #28a745; /* Green for contacted */
+}
+.actionButtonContacted:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.actionButtonConverted {
+  background-color: #ffc107; /* Yellow for converted */
+  color: #333;
+}
+.actionButtonConverted:hover:not(:disabled) {
+  background-color: #e0a800;
+}
+
+.noteInput {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 150px;
+}
+
+.saveNoteButton {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.saveNoteButton:hover {
+  background-color: #5a6268;
+}
+
+/* Add Lead Form Styling */
+.addLeadForm {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addLeadForm h3 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.formInput {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.formInput:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formError {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.formButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}
+
+.formButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.noteCell {
+  white-space: nowrap; /* Prevent wrapping for input and button */
+}
