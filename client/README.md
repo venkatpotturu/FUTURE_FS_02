@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+# 🚀 FUTURE_FS_02 – Client Lead Management System (Mini CRM)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Mini CRM (Customer Relationship Management System)** built as part of the **Future Interns Full Stack Web Development – Task 2**.
 
-## Available Scripts
+It simulates how businesses collect, track, and manage potential client leads from website contact forms.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Project Objective
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To build a simple full-stack system that allows businesses to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Store incoming leads
+- Track lead status
+- Add follow-up notes
+- Monitor conversion progress
 
-### `npm test`
+This mirrors real-world agency and startup workflows.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
+- React.js
+- Axios
+- HTML / CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+- Node.js
+- Express.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Database
+- MongoDB Atlas
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✔ Lead storage (Name, Email, Source)  
+✔ Lead status tracking (New → Contacted → Converted)  
+✔ Follow-up notes system  
+✔ Admin dashboard to manage leads  
+✔ Analytics (Total / Contacted / Converted)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📊 CRM Workflow
 
-## Learn More
+Contact Form → Backend API → MongoDB → Admin Dashboard
+FUTURE_FS_02
+│
+├── client/ # React Admin Dashboard
+├── server/ # Node.js Backend
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🔑 Key Functionalities
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1️⃣ Lead Management
+- View all leads
+- Update status
+- Track progress
 
-### Analyzing the Bundle Size
+### 2️⃣ Follow-Up Notes
+- Add notes per lead
+- Maintain communication history
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3️⃣ Analytics Dashboard
+Displays:
+- Total Leads
+- Contacted Leads
+- Converted Leads
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📡 API Endpoints
 
-### Advanced Configuration
+| Method | Endpoint        | Description       |
+|--------|-----------------|-------------------|
+| POST   | /leads/add      | Add new lead      |
+| GET    | /leads          | View all leads    |
+| PUT    | /leads/:id      | Update lead       |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ⚙️ Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Backend
+cd server
+npm install
+node server.js
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+### Frontend
+cd client
+npm install
+npm start
+
+
+---
+
+## 🌐 Database
+
+MongoDB Atlas is used for cloud-based lead storage.
+
+---
+
+## 🎯 Real-World Use Case
+
+This system can be used by:
+
+- Freelancers
+- Agencies
+- Startups
+
+to manage potential clients effectively.
+
+---
+
+## 📌 Purpose
+
+This project demonstrates:
+
+- CRUD operations
+- Full-stack integration
+- Data flow from frontend → backend → database
+
+---
+
+## 🧠 Learning Outcomes
+
+Through this project, I learned:
+
+- API creation with Express
+- MongoDB integration
+- React dashboard development
+- Lead tracking workflows
+
+---
+
+## 🚀 Future Enhancements
+
+- Secure Admin Login
+- Search & Filter Leads
+- Email Notifications
+- Lead Conversion Rate Analytics
+
+---
+
+## 👨‍💻 Author
+
+**Venkat Potturu**
+
+---
+
+## 📂 Project Structure
